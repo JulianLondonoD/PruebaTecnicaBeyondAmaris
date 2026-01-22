@@ -1,0 +1,75 @@
+/* Progress Bar Styles */
+.progress-bar {
+  @apply w-full bg-gray-200 rounded-full h-3 overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full rounded-full transition-all duration-500 ease-out relative overflow-hidden;
+}
+
+/* Progress Colors */
+.progress-not-started {
+  @apply bg-gray-200;
+}
+.progress-low {
+  @apply bg-red-500;
+}
+.progress-medium {
+  @apply bg-yellow-500;
+}
+.progress-high {
+  @apply bg-blue-500;
+}
+.progress-almost {
+  @apply bg-green-500;
+}
+.progress-complete {
+  @apply bg-emerald-600;
+}
+
+/* Card Styles */
+.todo-card {
+  @apply bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-200;
+}
+
+.todo-card-completed {
+  @apply border-green-200 bg-green-50;
+}
+
+.todo-card-in-progress {
+  @apply border-blue-200 bg-blue-50;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-gray-200 text-gray-800 text-sm rounded-md hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.btn-danger {
+  @apply px-4 py-2 bg-red-600 text-white text-sm rounded-md hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+/* Input Styles */
+.input-field {
+  @apply px-3 py-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+/* Loading States */
+.loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

@@ -1,0 +1,12 @@
+namespace TodoApp.Api.DTOs.Responses;
+
+public class TodoItemResponseDto
+{
+    public int Id { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public string Category { get; set; } = string.Empty;
+    public bool IsCompleted { get; set; }
+    public decimal TotalProgress { get; set; }
+    public List<ProgressionResponseDto> Progressions { get; set; } = new();
+}
